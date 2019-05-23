@@ -38,7 +38,7 @@ b
     left: -250px;
     height: 100vh;
     z-index: 999;
-    background: #9e8cd3;
+    background: rgb(189, 29, 29);;
     color: #fff;
     transition: all 0.3s;
     overflow-y: scroll;
@@ -178,4 +178,13 @@ ul ul a {
 {
     text-align: center;
     vertical-align: middle;
+}
+
+
+@media only screen and (max-width: 575.98px) {
+    #logo-about-us {width: 400px; length: 400px;}
+}
+
+@media only screen and (min-width: 768px) {
+    #logo-about-us {width: 450px; length: 450px;}
 }
