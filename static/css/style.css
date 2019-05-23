@@ -49,7 +49,7 @@ b
     top: 0;
     left: -250px;
     height: 100vh;
-    z-index: 999;
+    z-index: 999999;
     background: rgb(133, 21, 21);
     color: #fff;
     transition: all 0.3s;
@@ -87,14 +87,14 @@ b
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background: rgb(133, 21, 21);
+    background: black;
     z-index: 998;
     opacity: 0;
     transition: all 0.5s ease-in-out;
 }
 .overlay.active {
     display: block;
-    opacity: 1;
+    opacity: 0.8;
 }
 
 #sidebar .sidebar-header {
@@ -199,8 +199,16 @@ ul ul a {
     #avatar-2 {width: 300px; length: 300px;}
     #avatar-3 {width: 300px; length: 300px;}
     #avatar-4 {width: 300px; length: 300px;}
-    #itunes-logo {margin-top: 5px; margin-bottom: 5px;}
-    #stitcher-logo {margin-top: 25px;}
+    #spotify {width: 100px; length: 100px;}
+    #itunes {width: 125px; length: 125px;}
+    #anchor {width: 100px; length: 100px;}
+    #stitcher {width: 100px; length: 100px;}
+    #tunein {width: 125px; length: 125px;}
+    #spotify-logo {width: 130px; length: 130px;}
+    #itunes-logo {width: 150px; length: 150px;}
+    #anchor-logo {width: 130px; length: 130px;}
+    #stitcher-logo {width: 130px; length: 130px;}
+    #tunein-logo {width: 130px; length: 130px;}
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {

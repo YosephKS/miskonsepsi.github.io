@@ -6,6 +6,10 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="static/css/style.css">
+      <!-- Bootstrap core CSS -->
+  <link href="./static/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="./static/css/mdb.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
     <a href="https://icons8.com/icon/63304/itunes">iTunes icon by Icons8</a>
 
@@ -16,13 +20,13 @@
   <body>
     <div class="wrapper">
       <nav class="navbar navbar-expand-md navbar-dark fixed-top" style = "background-color: #C02F1D" id = "header">
-        <button class="navbar-toggler" type="button" id="sidebarCollapse" data-toggle="collapse" data-target="" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" id="sidebarCollapse" data-toggle="collapse" data-target="navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="mx-auto order-0">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="navbar-brand logo-nav" href="/"><img src = "./static/img/img2.jpg" style = "width: 45px; length: 45px;"><span class="sr-only">(current)</span></a>
+              <a class="navbar-brand logo-nav" href="#"><img src = "./static/img/img2.jpg" style = "width: 45px; length: 45px;"><span class="sr-only">(current)</span></a>
             </li>
           </ul>
         </div>
@@ -48,10 +52,9 @@
           <i class="fas fa-arrow-left" style="margin-top: 10px;"></i>
           <!-- XXX : fix this margin-top-->
         </div>
-        <div class="sidebar-header">
-          <h3>Menu</h3>
+        <div class="sidebar-header" style = "background-color: #C02F1D; box-shadow: 1px 1px 1px black;">
+          <img src = "static/img/img1.jpg" width = "100px">
         </div>
-
         <ul class="list-unstyled components">
           <li>
             <a href="#">Home</a>
@@ -85,54 +88,119 @@
             <div class = "col-sm" align = "center">
               <img src = "./static/img/img2.jpg" id = "avatar-1">
               <br>
-              <b>Faldy Liunarta</b>
+              <b>Faldy</b>
               <p align = "left">profile kita gitu loh isinya. apapun deh kyk tugas kita ngapain aja trus hobi mungkin atau apapun yang kita suka dan t yang sukai misal kita suka topik sejarah atau ekonomi gitu2 
                 </p>
             </div>
             <div class = "col-sm" align = "center">
                 <img src = "./static/img/img2.jpg" id = "avatar-2">
                 <br>
-                <b>Fendy Wiedardi Limtara</b>
+                <b>Fendy</b>
                 <p align = "left">profile kita gitu loh isinya. apapun deh kyk tugas kita ngapain aja trus hobi mungkin atau apapun yang kita suka dan t yang sukai misal kita suka topik sejarah atau ekonomi gitu2 
                   </p>
             </div>
             <div class = "col-sm" align = "center">
                 <img src = "./static/img/img2.jpg" id = "avatar-3">
                 <br>
-                <b>Nanda Kumara</b>
+                <b>Nanda</b>
                 <p align = "left">profile kita gitu loh isinya. apapun deh kyk tugas kita ngapain aja trus hobi mungkin atau apapun yang kita suka dan t yang sukai misal kita suka topik sejarah atau ekonomi gitu2 
                   </p>
             </div>
             <div class = "col-sm" align = "center">
                 <img src = "./static/img/img2.jpg" id = "avatar-4">
                 <br>
-                <b>Yoseph Kurnia Soenggoro</b>
+                <b>Yoseph</b>
                 <p align = "left">profile kita gitu loh isinya. apapun deh kyk tugas kita ngapain aja trus hobi mungkin atau apapun yang kita suka dan t yang sukai misal kita suka topik sejarah atau ekonomi gitu2 
                   </p>
             </div>
           </div>
         </div>
-        <div class = "container-fluid bg-light" id = "podcasts-platform" align = "center" style = "outline: 1px solid black; padding: 50px 50px 50px 50px; margin: 40px 0px 0px 0px; box-shadow: 10px 5px 5px black;">
+        <div class = "container-fluid bg-light" id = "podcasts-platform" align = "center" style = "outline: 1px solid black; padding: 50px 50px 50px 50px; margin: 40px 0px 40px 0px; box-shadow: 10px 5px 5px black;">
           <h1>DENGARKAN PODCAST KITA DI PLATFORM BERIKUT</h1>
           <div class = "row align-items-center justify-content-center">
             <div class = "col-sm" id = "spotify-logo">
-              <img src = "./static/img/spotify.png" width="200px" length = "200px">
+              <img src = "./static/img/spotify.png" width="200px" length = "200px" id = "spotify">
             </div>
             <div class = "col-sm" id = "itunes-logo">
-                <img src="https://img.icons8.com/color/500/000000/itunes.png" width = "235px" length = "235px">
+                <img src="https://img.icons8.com/color/500/000000/itunes.png" width = "235px" length = "235px" id = "itunes">
             </div>
             <div class = "col-sm" id = "anchor-logo">
-                <img src = "./static/img/anchor.png" width="200px" length = "200px">
+                <img src = "./static/img/anchor.png" width="200px" length = "200px" id = "anchor">
             </div>
             <div class = "col-sm" id = "stitcher-logo">
-                <img src = "./static/img/stitcher.png" width="200px" length = "200px">
+                <img src = "./static/img/stitcher.png" width="200px" length = "200px" id = "stitcher">
             </div>
             <div class = "col-sm" id = "tunein-logo">
-                <img src = "./static/img/tune-in.png" width="250px" length = "250px">
+                <img src = "./static/img/tune-in.png" width="250px" length = "250px" id = "tunein">
             </div>
           </div>
         </div>
       </div>
+<!-- Footer -->
+<footer class="page-footer font-small special-color-dark pt-4">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-5 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase">MISKONSEPSI PODCAST</h5>
+        <p>Here you can use rows and columns to organize your footer content.</p>
+        <p>Here you can use rows and columns to organize your footer content.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-4 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Subscription</h5>
+
+        <form class="input-group">
+            <input type="text" class="form-control form-control-sm" placeholder="Your email"
+              aria-label="Your email" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-sm btn-outline-white my-0" type="button">Subscribe</button>
+            </div>
+          </form>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Links</h5>
+            <a href="#!"><img src ="./static/img/facebook.png" width = "50px" length = "50px"></a>
+            <a href="#!"><img src ="./static/img/twitter.png" width = "50px" length = "50px"></a>
+            <a href="#!"><img src ="./static/img/instagram.png" width = "50px" length = "50px"></a>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2019 Copyright:
+    <a href="https://yosephks.github.io/miskonsepsi.github.io/"> Miskonsepsi Podcast ID</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
       <div class="overlay"></div>
     <div>
     <!-- Bootstrap core JavaScript
@@ -140,6 +208,12 @@
     <!-- Placed at the end of the document so the pages load faster -->
    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
    <script src = "./static/js/main_page.js"></script>
+     <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="./static/js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="./static/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="./static/js/mdb.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
