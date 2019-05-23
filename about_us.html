@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="static/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <a href="https://icons8.com/icon/63304/itunes">iTunes icon by Icons8</a>
 
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
@@ -14,7 +15,7 @@
 
   <body>
     <div class="wrapper">
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top" style = "background-color: rgb(189, 29, 29);">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top" style = "background-color: #C02F1D" id = "header">
         <button class="navbar-toggler" type="button" id="sidebarCollapse" data-toggle="collapse" data-target="" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -27,8 +28,11 @@
         </div>
         <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
           <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                  <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#">About Us<span class="sr-only">(current)</span></a>
+              <a class="nav-link disabled" href="#" style = "color : black">About Us<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="#">Our Podcasts<span class="sr-only">(current)</span></a>
@@ -50,21 +54,18 @@
 
         <ul class="list-unstyled components">
           <li>
-            <a href="/FindGuideQuest.html">Find Guide & Quests</a>
+            <a href="#">Home</a>
           </li>
           <li>
-            <a href="/myQuest.html">My Quests</a>
+            <a href="#">Our Podcasts</a>
           </li>
           <li>
-            <a href="/mypage.html#">Mypage</a>
-          </li>
-          <li>
-            <a href="/rank.html#">Rank</a>
+            <a href="#">Contact Us</a>
           </li>
         </ul>
       </nav>
       <div id="content">
-        <div class = "container-fluid bg-white" id = "general-info" style = "outline : 1px solid black; padding: 100px 50px 50px 50px; box-shadow: 10px 5px 5px black;">
+        <div class = "container-fluid bg-light" id = "general-info" style = "outline : 1px solid black; padding: 100px 50px 50px 50px; box-shadow: 10px 5px 5px black;">
           <div class = "row">
             <div class = "col-sm" id = "logo-div">
               <img src = "./static/img/img2.jpg" id = "logo-about-us">
@@ -80,23 +81,56 @@
           </div>
         </div>
         <div class = "container-fluid bg-dark" id = "contributor-section" style = "outline: 1px solid black; padding: 50px 50px 50px 50px; margin: 40px 0px 0px 0px; box-shadow: 10px 5px 5px black;">
-          <div class = "row">
-            <div class = "col-sm">
-
+          <div class = "row align-items-center justify-content-center">
+            <div class = "col-sm" align = "center">
+              <img src = "./static/img/img2.jpg" id = "avatar-1">
+              <br>
+              <b>Faldy Liunarta</b>
+              <p align = "left">profile kita gitu loh isinya. apapun deh kyk tugas kita ngapain aja trus hobi mungkin atau apapun yang kita suka dan t yang sukai misal kita suka topik sejarah atau ekonomi gitu2 
+                </p>
             </div>
-            <div class = "col-sm">
-
+            <div class = "col-sm" align = "center">
+                <img src = "./static/img/img2.jpg" id = "avatar-2">
+                <br>
+                <b>Fendy Wiedardi Limtara</b>
+                <p align = "left">profile kita gitu loh isinya. apapun deh kyk tugas kita ngapain aja trus hobi mungkin atau apapun yang kita suka dan t yang sukai misal kita suka topik sejarah atau ekonomi gitu2 
+                  </p>
             </div>
-            <div class = "col-sm">
-
+            <div class = "col-sm" align = "center">
+                <img src = "./static/img/img2.jpg" id = "avatar-3">
+                <br>
+                <b>Nanda Kumara</b>
+                <p align = "left">profile kita gitu loh isinya. apapun deh kyk tugas kita ngapain aja trus hobi mungkin atau apapun yang kita suka dan t yang sukai misal kita suka topik sejarah atau ekonomi gitu2 
+                  </p>
             </div>
-            <div class = "col-sm">
-
+            <div class = "col-sm" align = "center">
+                <img src = "./static/img/img2.jpg" id = "avatar-4">
+                <br>
+                <b>Yoseph Kurnia Soenggoro</b>
+                <p align = "left">profile kita gitu loh isinya. apapun deh kyk tugas kita ngapain aja trus hobi mungkin atau apapun yang kita suka dan t yang sukai misal kita suka topik sejarah atau ekonomi gitu2 
+                  </p>
             </div>
           </div>
         </div>
-        <div class = "container-fluid" id = "podcasts-platform">
-
+        <div class = "container-fluid bg-light" id = "podcasts-platform" align = "center" style = "outline: 1px solid black; padding: 50px 50px 50px 50px; margin: 40px 0px 0px 0px; box-shadow: 10px 5px 5px black;">
+          <h1>DENGARKAN PODCAST KITA DI PLATFORM BERIKUT</h1>
+          <div class = "row align-items-center justify-content-center">
+            <div class = "col-sm" id = "spotify-logo">
+              <img src = "./static/img/spotify.png" width="200px" length = "200px">
+            </div>
+            <div class = "col-sm" id = "itunes-logo">
+                <img src="https://img.icons8.com/color/500/000000/itunes.png" width = "235px" length = "235px">
+            </div>
+            <div class = "col-sm" id = "anchor-logo">
+                <img src = "./static/img/anchor.png" width="200px" length = "200px">
+            </div>
+            <div class = "col-sm" id = "stitcher-logo">
+                <img src = "./static/img/stitcher.png" width="200px" length = "200px">
+            </div>
+            <div class = "col-sm" id = "tunein-logo">
+                <img src = "./static/img/tune-in.png" width="250px" length = "250px">
+            </div>
+          </div>
         </div>
       </div>
       <div class="overlay"></div>
@@ -105,6 +139,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+   <script src = "./static/js/main_page.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
