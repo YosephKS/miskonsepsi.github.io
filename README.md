@@ -14,7 +14,7 @@ This is a template of a podcast website that is open to the public to use and mo
 The website template was made by several fundamental web programming languages that is required to build Frontend aspects, such as:
 * HTML5
 
-[HTML5 Logo]()
+[](./static/img/html5-logo.png)
 
 * CSS3 
 
